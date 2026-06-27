@@ -456,3 +456,6 @@ export async function collectSnapshots(
 // The runner-side plugin that transports these snapshots now lives in
 // @sourceacademy/runner-cse-machine (CseMachinePlugin). This module only owns the
 // Python-specific serialization of control/stash/environment into CseSnapshots.
+
+// Exported for unit testing only — not part of the public API.
+export { formatValue, serializeValue, instrDisplayText, serializeControlItem, serializeEnvChain };
